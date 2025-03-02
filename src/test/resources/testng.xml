@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="All Test Suite" parallel="tests" thread-count="5">
+
+    <!-- Smoke Tests -->
+    <test name="Smoke Tests">
+        <groups>
+            <run>
+                <include name="smoke"/>
+                <exclude name="regress"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="Delivery.DeliveryTests"/>
+        </classes>
+    </test>
+
+    <!-- Regression Tests -->
+    <test name="Regression Tests">
+        <groups>
+            <run>
+                <include name="regress"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="Delivery.DeliveryTests"/>
+        </classes>
+    </test>
+
+</suite>
